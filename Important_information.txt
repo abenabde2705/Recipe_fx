@@ -1,0 +1,19 @@
+This project was individually developed by Ben Abdessalem Amrou as a personal project for recipe processing using JavaFX.
+
+Configuration
+The project was configured and developed using the following tools:
+
+Java Development Kit (JDK) version [version]
+JavaFX [version]
+IntelliJ IDEA [version] (IDE)
+Maven [version] (dependency management)
+All necessary dependencies have been properly configured in the pom.xml file.
+Issues Encountered
+Resizing Background Images
+One of the issues encountered during development concerns resizing background images in the JavaFX user interface. Despite several attempts and research, the optimal solution has not yet been found. The images may appear distorted or improperly resized on certain screen sizes.
+
+Problem with Executable
+Another issue encountered concerns the creation of the application's JAR executable. Although the project compiles correctly and works without issues in the IDE, running the JAR executable may result in errors related to JavaFX configuration or other environment-related issues.
+
+Important Note
+Despite these issues, the project is functional in the development environment. It is recommended to run the project directly from the IDE to avoid potential problems related to the runtime environment configuration.
