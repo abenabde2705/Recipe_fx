@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.HelloController">
+
+    <!-- Ajouter l'image en arrière-plan -->
+    <ImageView fitHeight="600.0" fitWidth="800.0">
+        <image>
+            <Image url="@pexels-photo-349610.jpeg" />
+        </image>
+    </ImageView>
+
+    <!-- Ajouter le texte et les boutons par-dessus l'image -->
+    <Label fx:id="welcomeText" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="79.0" lineSpacing="2.0" prefHeight="110.0" prefWidth="379.0" text="Let's Cook" textAlignment="CENTER" textFill="#388659" textOverrun="CLIP">
+        <font>
+            <Font name="CARLOSEADemo-Regular" size="80.0" />
+        </font>
+    </Label>
+
+    <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="8.0" layoutX="255.0" layoutY="223.0" onAction="#onHelloButtonClick" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited" prefHeight="48.0" prefWidth="267.0" style="-fx-font-size: 14pt; -fx-text-fill: white; -fx-background-color: #4CAF50; -fx-padding: 10px;" text="Présentation Graphique" textAlignment="CENTER">
+
+</Button>
+    <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="8.0" layoutX="254.0" layoutY="287.0" onAction="#ontextButtonClick" onMouseEntered="#handleMouseEntered" onMouseExited="#handleMouseExited2" prefHeight="48.0" prefWidth="267.0" style="-fx-font-size: 14pt; -fx-text-fill: white; -fx-background-color: #008CBA; -fx-padding: 10px;" text="Présentation Textuelle" textAlignment="CENTER">
+
+</Button>
+</AnchorPane>

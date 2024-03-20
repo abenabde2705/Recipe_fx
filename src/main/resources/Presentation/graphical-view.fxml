@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.HelloController">
+
+          <!-- Copier et coller la partie ImageView de l'arrière-plan -->
+    <ImageView fitHeight="600.0" fitWidth="800.0">
+        <image>
+            <Image url="@pexels-photo-349610.jpeg" />
+        </image>
+    </ImageView>
+
+    <!-- Ajouter le texte et les boutons par-dessus l'image -->
+    <Label fx:id="welcomeText" alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="37.0" lineSpacing="2.0" prefHeight="118.0" prefWidth="419.0" text="Let's Cook" textAlignment="CENTER" textFill="#388659" textOverrun="CLIP">
+        <font>
+            <Font name="CARLOSEADemo-Regular" size="80.0" />
+        </font>
+    </Label>
+   <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="8.0" layoutX="53.0" layoutY="196.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#onListRecipesButtonClick" onMouseEntered="#handleMouseEnteredshow" onMouseExited="#handleMouseExited" prefHeight="48.0" prefWidth="140.0" style="-fx-font-size: 14pt; -fx-text-fill: white; -fx-background-color: #4CAF50; -fx-padding: 10px;" text="Show Recipes" textAlignment="CENTER">
+    <font>
+        <Font name="System Bold" size="61.0" />
+    </font>
+</Button>
+
+<TextArea fx:id="recipeTitlesTextArea" editable="false" layoutX="53.0" layoutY="245.0" opacity="0.71" prefHeight="278.0" prefWidth="226.0" />
+    <ComboBox fx:id="combochoices" cache="true" layoutX="308.0" layoutY="212.0" prefHeight="36.0" prefWidth="298.0" style="-fx-background-color: #4CAF50;">
+        <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+        </cursor>
+
+    </ComboBox>
+
+    <TextArea fx:id="resultmethod" editable="false" layoutX="308.0" layoutY="245.0" opacity="0.81" prefHeight="278.0" prefWidth="462.0">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </TextArea>
+   <Button layoutX="695.0" layoutY="215.0" mnemonicParsing="false" onAction="#onLaunchButtonClick" onMouseEntered="#handleMouseEnteredlaunch" onMouseExited="#handleMouseExitedlaunch" prefHeight="4.0" prefWidth="74.0" style="-fx-background-color: grey; -fx-border-radius: 50px; -fx-background-radius: 10px;" text="Launch" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+    <VBox fx:id="recipeButtonsContainer" layoutX="53.0" layoutY="245.0" prefHeight="278.0" prefWidth="226.0" />
+   <Button fx:id="returnbutton" layoutX="14.0" layoutY="553.0" mnemonicParsing="false" onAction="#onreturnclik" onMouseEntered="#handleMouseEnteredlaunch" onMouseExited="#handleMouseExitedlaunch" style="-fx-background-color: gray; -fx-background-radius: 10px;" text="Return" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+
+
+</AnchorPane>
